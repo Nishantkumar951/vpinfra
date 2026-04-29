@@ -1,0 +1,131 @@
+---
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid grid gap-8">
+      <div class="footer-col">
+        <h3 class="footer-logo"><span class="logo-vp">V.P.</span> <span class="logo-infra">INFRA</span></h3>
+        <p class="company-desc">
+          Premium Construction and Solar Installation Services. Building a better, sustainable future together.
+        </p>
+        <div class="certifications mt-4">
+          <span class="cert-badge">ISO 9001:2015 Certified</span>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/services/solar-installation">Solar Installation</a></li>
+          <li><a href="/services/building-construction">Building Construction</a></li>
+          <li><a href="/services/city-road-construction">Road Construction</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4 class="footer-title">Contact Information</h4>
+        <ul class="contact-info">
+          <li><strong>Office:</strong> FF 72, Khazana Complex, Ashiana, Lucknow - 226012</li>
+          <li><strong>Branch:</strong> M-652, Sector-M, Ashiyana Colony, Kanpur Road, Lucknow, UP - 226012</li>
+          <li><strong>Mobile:</strong> 8840069902</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Legal Details</h4>
+        <ul class="contact-info">
+          <li><strong>MSME UDYAM:</strong><br/> UDYAM - UP - 50 - 0085926</li>
+          <li><strong>Registration No:</strong><br/> UPSA28754054</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; {new Date().getFullYear()} V.P. Infra Properties (OPC) Private Limited. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding-top: 5rem;
+    margin-top: 4rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 3rem;
+  }
+  .footer-logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+  }
+  .logo-vp { color: var(--primary); }
+  .logo-infra { color: var(--text-light); }
+  
+  .company-desc {
+    color: #94A3B8;
+  }
+  .cert-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 215, 0, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .footer-title {
+    color: var(--text-light);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.8rem;
+  }
+  .footer-links a {
+    color: #94A3B8;
+    transition: var(--transition);
+  }
+  .footer-links a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+  }
+  
+  .contact-info li {
+    color: #94A3B8;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .contact-info strong {
+    color: var(--text-light);
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .footer-bottom {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94A3B8;
+    font-size: 0.875rem;
+  }
+</style>

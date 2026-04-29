@@ -1,0 +1,194 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="hero-overlay"></div>
+		<div class="container hero-content text-center">
+			<h1 class="fade-in-up">Building the Future, <br/><span class="text-primary">Powering Tomorrow</span></h1>
+			<p class="hero-subtitle fade-in-up mt-4">V.P. Infra Properties specializes in premium building construction, city road development, and sustainable solar installations.</p>
+			<div class="hero-actions fade-in-up mt-8">
+				<a href="/about-us" class="btn btn-primary">Discover More</a>
+				<a href="/contact-us" class="btn btn-outline" style="color: white; border-color: white;">Get in Touch</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="services-section bg-gray">
+		<div class="container">
+			<h2 class="section-title">Our Services</h2>
+			<div class="services-grid grid gap-8 mt-8">
+				
+				<!-- Service 1 -->
+				<div class="card fade-in-up">
+					<div class="card-img-wrapper">
+						<img src="/images/solar_installation.png" alt="Solar Installation" class="card-img" />
+					</div>
+					<div class="card-content">
+						<h3 class="card-title">Solar Installation</h3>
+						<p class="card-text">Specialized solar installations under PM Surya Ghar Muft Bijli Yojna. Transition to clean, sustainable energy with expert deployment.</p>
+						<a href="/services/solar-installation" class="btn btn-outline">Read More</a>
+					</div>
+				</div>
+
+				<!-- Service 2 -->
+				<div class="card fade-in-up" style="animation-delay: 0.2s;">
+					<div class="card-img-wrapper">
+						<img src="/images/building_construction.png" alt="Building Construction" class="card-img" />
+					</div>
+					<div class="card-content">
+						<h3 class="card-title">Building Construction</h3>
+						<p class="card-text">Delivering top-tier residential and commercial building construction with modern engineering, robust materials, and aesthetic excellence.</p>
+						<a href="/services/building-construction" class="btn btn-outline">Read More</a>
+					</div>
+				</div>
+
+				<!-- Service 3 -->
+				<div class="card fade-in-up" style="animation-delay: 0.4s;">
+					<div class="card-img-wrapper">
+						<img src="/images/road_construction.png" alt="City Road Construction" class="card-img" />
+					</div>
+					<div class="card-content">
+						<h3 class="card-title">City Road Construction</h3>
+						<p class="card-text">Constructing durable, high-quality city roads using advanced paving technologies to enhance urban connectivity and safety.</p>
+						<a href="/services/city-road-construction" class="btn btn-outline">Read More</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us -->
+	<section class="why-choose-us">
+		<div class="container">
+			<div class="wcu-grid grid gap-8 items-center">
+				<div class="wcu-content">
+					<h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Why Choose V.P. Infra?</h2>
+					<p class="mb-4 text-gray">With an ISO 9001:2015 Certification, we are committed to maintaining the highest quality standards in all our construction and renewable energy projects.</p>
+					
+					<ul class="features-list mt-4">
+						<li>
+							<div class="feature-icon">✓</div>
+							<div>
+								<h4>Quality Assurance</h4>
+								<p>ISO Certified processes ensuring durable and premium outputs.</p>
+							</div>
+						</li>
+						<li>
+							<div class="feature-icon">✓</div>
+							<div>
+								<h4>Expert Engineering</h4>
+								<p>Highly skilled professionals with years of industry experience.</p>
+							</div>
+						</li>
+						<li>
+							<div class="feature-icon">✓</div>
+							<div>
+								<h4>Government Approved</h4>
+								<p>Registered under MSME and compliant with state regulations.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="wcu-image">
+					<!-- Reusing hero background for consistency in demo -->
+					<img src="/images/hero_bg.png" alt="Infrastructure Construction" />
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.hero {
+		min-height: 80vh;
+		background-image: url('/images/hero_bg.png');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.7));
+	}
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		color: var(--text-light);
+		max-width: 800px;
+	}
+	.hero h1 {
+		font-size: 4rem;
+		color: var(--text-light);
+		margin-bottom: 1rem;
+	}
+	.text-primary {
+		color: var(--primary);
+	}
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.services-grid {
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	}
+
+	.bg-gray {
+		background-color: var(--bg-gray);
+	}
+
+	.wcu-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 768px) {
+		.wcu-grid { grid-template-columns: 1fr; }
+		.hero h1 { font-size: 2.5rem; }
+	}
+	.features-list li {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	.feature-icon {
+		width: 30px;
+		height: 30px;
+		background-color: var(--primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		font-weight: bold;
+	}
+	.features-list h4 {
+		margin-bottom: 0.25rem;
+	}
+	.features-list p {
+		color: var(--text-gray);
+		font-size: 0.95rem;
+	}
+	.wcu-image img {
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: var(--shadow-lg);
+	}
+</style>

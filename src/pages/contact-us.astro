@@ -1,0 +1,170 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us">
+  <!-- Page Header -->
+  <section class="page-header text-center">
+    <div class="container">
+      <h1 class="fade-in-up">Contact Us</h1>
+      <p class="fade-in-up mt-4">We are here to answer any questions you may have about our services.</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid grid gap-8">
+        
+        <!-- Contact Info -->
+        <div class="contact-info fade-in-up">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Get In Touch</h2>
+          <p class="mb-8 text-gray">Feel free to reach out to us for project inquiries, solar installations, or any construction needs.</p>
+          
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Head Office</h4>
+              <p>FF 72, Khazana Complex, Ashiana, Lucknow - 226012</p>
+            </div>
+          </div>
+          
+          <div class="info-card mt-4">
+            <div class="info-icon">🏢</div>
+            <div>
+              <h4>Branch Office</h4>
+              <p>M-652, Sector-M, Ashiyana Colony, Kanpur Road, Lucknow, Uttar Pradesh - 226012</p>
+            </div>
+          </div>
+          
+          <div class="info-card mt-4">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Mobile Number</h4>
+              <p>8840069902</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper fade-in-up" style="animation-delay: 0.2s;">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="solar">Solar Installation</option>
+                <option value="building">Building Construction</option>
+                <option value="road">City Road Construction</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us about your project" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 6rem 0 4rem;
+  }
+  .page-header h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  
+  .info-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: var(--bg-main);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--bg-gray);
+    transition: var(--transition);
+  }
+  .info-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  .info-icon {
+    font-size: 1.5rem;
+    background: rgba(255, 123, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .info-card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+  }
+  .info-card p {
+    color: var(--text-gray);
+    margin: 0;
+  }
+
+  .contact-form-wrapper {
+    background: var(--bg-main);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 123, 0, 0.1);
+  }
+  .w-100 {
+    width: 100%;
+  }
+</style>

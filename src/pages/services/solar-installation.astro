@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Solar Installation">
+  <!-- Page Header -->
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/solar_installation.png');">
+    <div class="container">
+      <h1 class="fade-in-up">Solar Installation</h1>
+      <p class="fade-in-up mt-4">Empowering homes with clean energy under the PM Surya Ghar Muft Bijli Yojna.</p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section class="service-details">
+    <div class="container">
+      <div class="grid gap-8 service-grid">
+        <div class="service-content fade-in-up">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Transition to Sustainable Energy</h2>
+          <p class="mb-4">V.P. Infra Properties is a proud facilitator of the <strong>PM Surya Ghar Muft Bijli Yojna</strong>, an ambitious initiative to promote rooftop solar installations across the nation. Our expert team ensures seamless integration of high-efficiency solar panels, maximizing your energy yield and reducing electricity bills.</p>
+          
+          <h3 class="mt-8 mb-4">Why Choose Our Solar Services?</h3>
+          <ul class="benefits-list">
+            <li><strong>Expert Assessment:</strong> Detailed site analysis to determine optimal panel placement and capacity.</li>
+            <li><strong>Premium Equipment:</strong> Utilizing high-tier solar panels and inverters for maximum durability and efficiency.</li>
+            <li><strong>End-to-End Execution:</strong> From government approvals and subsidies processing to final installation and maintenance.</li>
+            <li><strong>Cost Savings:</strong> Significant reduction in monthly electricity bills with government subsidies under the PM Yojana.</li>
+          </ul>
+
+          <div class="mt-8">
+            <a href="/contact-us" class="btn btn-primary">Request a Free Consultation</a>
+          </div>
+        </div>
+        <div class="service-image fade-in-up" style="animation-delay: 0.2s;">
+          <img src="/images/solar_installation.png" alt="Solar Panel Installation" />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    padding: 8rem 0 6rem;
+  }
+  .page-header h1 {
+    color: var(--text-light);
+    font-size: 3.5rem;
+  }
+  .service-grid {
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
+  @media (max-width: 992px) {
+    .service-grid { grid-template-columns: 1fr; }
+  }
+  .service-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+  }
+  .benefits-list {
+    list-style: none;
+  }
+  .benefits-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-gray);
+  }
+  .benefits-list li::before {
+    content: '☀️';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+  }
+  .benefits-list strong {
+    color: var(--secondary);
+  }
+</style>

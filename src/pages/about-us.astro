@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us">
+  <!-- Page Header -->
+  <section class="page-header text-center">
+    <div class="container">
+      <h1 class="fade-in-up">About Us</h1>
+      <p class="fade-in-up mt-4">Learn more about V.P. Infra Properties and our commitment to excellence.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="container">
+      <div class="about-grid grid gap-8 items-center">
+        <div class="about-image fade-in-up">
+          <img src="/images/building_construction.png" alt="Company Overview" />
+        </div>
+        <div class="about-text fade-in-up" style="animation-delay: 0.2s;">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">V.P. Infra Properties (OPC) Private Limited</h2>
+          <p class="mb-4">We are a premier construction and infrastructure company dedicated to shaping the future through innovative engineering and sustainable practices. With a strong focus on quality, safety, and client satisfaction, we have established ourselves as a trusted name in the industry.</p>
+          <p class="mb-4">Our expertise spans across residential and commercial building construction, advanced city road development, and eco-friendly solar installations under the PM Surya Ghar Muft Bijli Yojna.</p>
+          
+          <div class="certifications mt-8 p-4 bg-gray" style="border-radius: 8px; border-left: 4px solid var(--primary);">
+            <h4 style="margin-bottom: 0.5rem; color: var(--secondary);">Our Credentials</h4>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-gray);">
+              <li><strong>ISO 9001:2015 Certified Company</strong></li>
+              <li><strong>MSME UDYAM Registration Number:</strong> UDYAM - UP - 50 - 0085926</li>
+              <li><strong>Registration No:</strong> UPSA28754054</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 6rem 0 4rem;
+  }
+  .page-header h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+  }
+  @media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,110 @@
+---
+const currentPath = Astro.url.pathname;
+---
+<header class="header">
+  <div class="container flex justify-between items-center header-inner">
+    <a href="/" class="logo">
+      <img src="/images/logo.jpg" alt="V.P. Infra Properties Logo" class="logo-img" />
+    </a>
+    
+    <nav class="nav">
+      <ul class="nav-list flex gap-8">
+        <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
+        <li><a href="/about-us" class={currentPath === '/about-us' ? 'active' : ''}>About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class={currentPath.includes('/services/') ? 'active' : ''}>Services ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="/services/solar-installation">Solar Installation</a></li>
+            <li><a href="/services/building-construction">Building Construction</a></li>
+            <li><a href="/services/city-road-construction">City Road Construction</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact-us" class={currentPath === '/contact-us' ? 'active' : ''}>Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  </div>
+</header>
+
+<style>
+  .header {
+    background-color: var(--bg-main);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    padding: 1.25rem 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo-img {
+    height: 60px; /* Adjust height based on your design preference */
+    width: auto;
+    object-fit: contain;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-list a {
+    font-weight: 500;
+    color: var(--secondary);
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  .nav-list a:hover, .nav-list a.active {
+    color: var(--primary);
+  }
+  .nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: var(--transition);
+  }
+  .nav-list a:hover::after, .nav-list a.active::after {
+    width: 100%;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-main);
+    box-shadow: var(--shadow-md);
+    min-width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--bg-gray);
+  }
+  .dropdown-menu li a::after {
+    display: none;
+  }
+  .dropdown-menu li a:hover {
+    background-color: var(--bg-gray);
+    color: var(--primary);
+  }
+</style>
