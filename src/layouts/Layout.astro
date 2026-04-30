@@ -18,11 +18,49 @@ const { title, description = "V.P. Infra Properties (OPC) Private Limited - Prem
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
 		<title>{title} | V.P. Infra Properties</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+		<meta property="og:title" content={`${title} | V.P. Infra Properties`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:site_name" content="V.P. Infra Properties (OPC) Private Limited" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+		<meta property="twitter:title" content={`${title} | V.P. Infra Properties`} />
+		<meta property="twitter:description" content={description} />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+	
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ConstructionBusiness",
+				"name": "V.P. Infra Properties (OPC) Private Limited",
+				"url": "https://www.vpinfra.co.in/",
+				"logo": "https://www.vpinfra.co.in/images/logo.jpg",
+				"description": "Premium Construction and Solar Installation Services in Lucknow.",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "FF 72, Khazana Complex, Ashiana",
+					"addressLocality": "Lucknow",
+					"addressRegion": "UP",
+					"postalCode": "226012",
+					"addressCountry": "IN"
+				},
+				"telephone": "+91-8840069902"
+			}
+		</script>
 	</head>
 	<body>
 		<Header />
