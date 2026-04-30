@@ -1,8 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-// Fetch all markdown files in the blog directory
-const posts = await Astro.glob('./*.md');
+// Fetch all markdown files in the blog directory using Vite's import.meta.glob
+const posts = Object.values(import.meta.glob('./*.md', { eager: true }));
 // Sort posts by date descending
 const sortedPosts = posts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
