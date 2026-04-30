@@ -19,6 +19,7 @@ const currentPath = Astro.url.pathname;
             <li><a href="/services/city-road-construction">City Road Construction</a></li>
           </ul>
         </li>
+        <li><a href="/blog" class={currentPath.includes('/blog') ? 'active' : ''}>Blog</a></li>
         <li><a href="/contact-us" class={currentPath === '/contact-us' ? 'active' : ''}>Contact Us</a></li>
       </ul>
     </nav>
