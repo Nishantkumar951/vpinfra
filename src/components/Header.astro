@@ -16,10 +16,8 @@ const currentPath = Astro.url.pathname;
           <ul class="dropdown-menu">
             <li><a href="/services/solar-installation">Solar Installation</a></li>
             <li><a href="/services/building-construction">Building Construction</a></li>
-            <li><a href="/services/city-road-construction">City Road Construction</a></li>
           </ul>
         </li>
-        <li><a href="/blog" class={currentPath.includes('/blog') ? 'active' : ''}>Blog</a></li>
         <li><a href="/contact-us" class={currentPath === '/contact-us' ? 'active' : ''}>Contact Us</a></li>
       </ul>
     </nav>
