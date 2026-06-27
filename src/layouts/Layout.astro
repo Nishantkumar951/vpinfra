@@ -9,6 +9,11 @@ interface Props {
 }
 
 const { title, description = "V.P. Infra Properties (OPC) Private Limited - Construction and Solar Installation Services" } = Astro.props;
+
+// Ensure consistent trailing slash for canonical URLs
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const canonicalPath = pathname === '' ? '/' : `${pathname}/`;
+const canonicalURL = new URL(canonicalPath, Astro.site || 'https://www.vpinfra.co.in/');
 ---
 
 <!doctype html>
@@ -22,7 +27,7 @@ const { title, description = "V.P. Infra Properties (OPC) Private Limited - Cons
 		<!-- SEO Meta Tags -->
 		<title>{title} | V.P. Infra Properties</title>
 		<meta name="description" content={description} />
-		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+		<link rel="canonical" href={canonicalURL} />
 
 		<!-- Google Site Verification -->
 		<meta name="google-site-verification" content="f1jo8gg5LkvCwOE4Y9baXN5AEttsF3waV-fE_JdYcUU" />
@@ -39,14 +44,14 @@ const { title, description = "V.P. Infra Properties (OPC) Private Limited - Cons
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:title" content={`${title} | V.P. Infra Properties`} />
 		<meta property="og:description" content={description} />
 		<meta property="og:site_name" content="V.P. Infra Properties (OPC) Private Limited" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={new URL(Astro.url.pathname, Astro.site || 'https://www.vpinfra.co.in/')} />
+		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={`${title} | V.P. Infra Properties`} />
 		<meta property="twitter:description" content={description} />
 
