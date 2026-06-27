@@ -1,10 +1,10 @@
 export async function GET() {
   const pages = [
-    'https://www.vpinfra.co.in/',
-    'https://www.vpinfra.co.in/about-us/',
-    'https://www.vpinfra.co.in/contact-us/',
-    'https://www.vpinfra.co.in/services/building-construction-company-in-lucknow/',
-    'https://www.vpinfra.co.in/services/solar-installation/'
+    'https://vpinfra.co.in/',
+    'https://vpinfra.co.in/about-us/',
+    'https://vpinfra.co.in/contact-us/',
+    'https://vpinfra.co.in/services/building-construction-company-in-lucknow/',
+    'https://vpinfra.co.in/services/solar-installation/'
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
