@@ -4,7 +4,8 @@ export async function GET() {
     'https://vpinfra.co.in/about-us/',
     'https://vpinfra.co.in/contact-us/',
     'https://vpinfra.co.in/services/building-construction-company-in-lucknow/',
-    'https://vpinfra.co.in/services/solar-installation/'
+    'https://vpinfra.co.in/services/solar-installation/',
+    'https://vpinfra.co.in/blog/'
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

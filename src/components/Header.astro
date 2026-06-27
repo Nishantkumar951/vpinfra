@@ -18,6 +18,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
             <li><a href="/services/building-construction-company-in-lucknow/">Building Construction</a></li>
           </ul>
         </li>
+        <li><a href="/blog/" class={currentPath === '/blog' ? 'active' : ''}>Blog</a></li>
         <li><a href="/contact-us/" class={currentPath === '/contact-us' ? 'active' : ''}>Contact Us</a></li>
       </ul>
     </nav>

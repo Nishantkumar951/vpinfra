@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const posts = [
+  {
+    title: "Guide to PM Surya Ghar Muft Bijli Yojna in Lucknow",
+    description: "Learn how to apply for solar rooftop subsidies under the PM Surya Ghar Muft Bijli Yojna in Lucknow, UP. Discover eligibility, registration steps, and long-term savings.",
+    url: "/contact-us/",
+    date: "June 15, 2026",
+    readTime: "5 min read",
+    image: "/images/pm_yogi_solar.jpg",
+    tag: "Solar Energy"
+  },
+  {
+    title: "Top Building Construction Trends in Lucknow for 2026",
+    description: "Explore rising architectural designs, earthquake-resistant structural engineering, and eco-friendly green building practices popular in Lucknow's modern projects.",
+    url: "/contact-us/",
+    date: "June 10, 2026",
+    readTime: "4 min read",
+    image: "/images/building_construction.png",
+    tag: "Construction"
+  },
+  {
+    title: "Why Solar Energy is a Smart Investment for UP Businesses",
+    description: "An analysis of commercial solar ROI, net metering policies in Uttar Pradesh, and how commercial solar rooftop installations protect local businesses from rising electricity tariffs.",
+    url: "/contact-us/",
+    date: "June 05, 2026",
+    readTime: "6 min read",
+    image: "/images/solar_installation.png",
+    tag: "Commercial Solar"
+  }
+];
+---
+
+<Layout 
+  title="Blog & Insights | V.P. Infra Properties Lucknow"
+  description="Stay updated with the latest news, guides, and insights on building construction, real estate, and solar installations under PM Surya Ghar Yojna in Lucknow, Uttar Pradesh."
+>
+  <!-- Page Header -->
+  <section class="page-header text-center">
+    <div class="container">
+      <h1 class="fade-in-up">Latest Blog & Insights</h1>
+      <p class="fade-in-up mt-4">Expert guides, news, and technical insights on construction, solar installations, and sustainable energy in UP.</p>
+    </div>
+  </section>
+
+  <!-- Blog Listing -->
+  <section class="blog-section bg-gray">
+    <div class="container">
+      <div class="blog-grid grid gap-8">
+        
+        {posts.map((post, index) => (
+          <article class="card blog-card fade-in-up" style={`animation-delay: ${index * 0.1}s;`}>
+            <div class="card-img-wrapper">
+              <img src={post.image} alt={post.title} class="card-img" />
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-meta">
+                <span class="blog-tag">{post.tag}</span>
+                <span>•</span>
+                <time>{post.date}</time>
+                <span>•</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 class="blog-card-title card-title">
+                <a href={post.url}>{post.title}</a>
+              </h2>
+              <p class="blog-card-text card-text">{post.description}</p>
+              <div>
+                <a href={post.url} class="read-more-link">
+                  Inquire Details →
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 6rem 0 4rem;
+  }
+  .page-header h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+  }
+  .blog-section {
+    padding: 4rem 0;
+  }
+  .blog-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-main);
+  }
+  .blog-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.5rem;
+  }
+  .blog-card-meta {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .blog-tag {
+    background-color: rgba(255, 123, 0, 0.1);
+    color: var(--primary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  .blog-card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+  .blog-card-title a {
+    color: var(--secondary);
+  }
+  .blog-card-title a:hover {
+    color: var(--primary);
+  }
+  .blog-card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  .read-more-link {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+    transition: var(--transition);
+  }
+  .read-more-link:hover {
+    color: var(--primary-hover);
+    padding-left: 4px;
+  }
+  .bg-gray {
+    background-color: var(--bg-gray);
+  }
+</style>
