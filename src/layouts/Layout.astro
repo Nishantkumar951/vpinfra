@@ -13,7 +13,7 @@ const { title, description = "V.P. Infra Properties (OPC) Private Limited - Cons
 // Ensure consistent trailing slash for canonical URLs
 const pathname = Astro.url.pathname.replace(/\/$/, '');
 const canonicalPath = pathname === '' ? '/' : `${pathname}/`;
-const canonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in/');
+const canonicalURL = new URL(canonicalPath, Astro.site || 'https://www.vpinfra.co.in/');
 ---
 
 <!doctype html>
@@ -66,8 +66,8 @@ const canonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in
 				"@context": "https://schema.org",
 				"@type": "ConstructionBusiness",
 				"name": "V.P. Infra Properties (OPC) Private Limited",
-				"url": "https://vpinfra.co.in/",
-				"logo": "https://vpinfra.co.in/images/logo.jpg",
+				"url": "https://www.vpinfra.co.in/",
+				"logo": "https://www.vpinfra.co.in/images/logo.jpg",
 				"description": "Construction and Solar Installation Services in Lucknow.",
 				"address": {
 					"@type": "PostalAddress",
