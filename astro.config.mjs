@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.vpinfra.co.in/',
+  site: 'https://vpinfra.co.in/',
   trailingSlash: 'always',
   redirects: {
     '/services/building-construction': '/services/building-construction-company-in-lucknow/',
