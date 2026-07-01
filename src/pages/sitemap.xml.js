@@ -8,7 +8,8 @@ export async function GET() {
     'https://vpinfra.co.in/blog/',
     'https://vpinfra.co.in/blog/pm-surya-ghar-yojna-lucknow/',
     'https://vpinfra.co.in/blog/building-construction-trends-lucknow/',
-    'https://vpinfra.co.in/blog/solar-energy-business-up-investment/'
+    'https://vpinfra.co.in/blog/solar-energy-business-up-investment/',
+    'https://vpinfra.co.in/blog/best-house-builders-in-lucknow/'
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
