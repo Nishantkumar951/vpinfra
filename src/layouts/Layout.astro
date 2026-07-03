@@ -4,11 +4,12 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
-	title: string;
+	title?: string;
 	description?: string;
+	titleOverride?: string;
 }
 
-const { title, description = "V.P. Infra Properties (OPC) Private Limited - Construction and Solar Installation Services" } = Astro.props;
+const { title = "", description = "V.P. Infra Properties (OPC) Private Limited - Construction and Solar Installation Services", titleOverride } = Astro.props;
 
 // Ensure consistent trailing slash for canonical URLs
 const pathname = Astro.url.pathname.replace(/\/$/, '');
@@ -26,7 +27,7 @@ const canonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in
 		<meta name="generator" content={Astro.generator} />
 		
 		<!-- SEO Meta Tags -->
-		<title>{title} | V.P. Infra Properties</title>
+		<title>{titleOverride || `${title} | V.P. Infra Properties`}</title>
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
 
@@ -46,14 +47,14 @@ const canonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonicalURL} />
-		<meta property="og:title" content={`${title} | V.P. Infra Properties`} />
+		<meta property="og:title" content={titleOverride || `${title} | V.P. Infra Properties`} />
 		<meta property="og:description" content={description} />
 		<meta property="og:site_name" content="V.P. Infra Properties (OPC) Private Limited" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={canonicalURL} />
-		<meta property="twitter:title" content={`${title} | V.P. Infra Properties`} />
+		<meta property="twitter:title" content={titleOverride || `${title} | V.P. Infra Properties`} />
 		<meta property="twitter:description" content={description} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
