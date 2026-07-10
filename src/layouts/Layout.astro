@@ -7,14 +7,16 @@ interface Props {
 	title?: string;
 	description?: string;
 	titleOverride?: string;
+	canonical?: string;
 }
 
-const { title = "", description = "V.P. Infra Properties (OPC) Private Limited - Construction and Solar Installation Services", titleOverride } = Astro.props;
+const { title = "", description = "V.P. Infra Properties (OPC) Private Limited - Construction and Solar Installation Services", titleOverride, canonical } = Astro.props;
 
 // Ensure consistent trailing slash for canonical URLs
 const pathname = Astro.url.pathname.replace(/\/$/, '');
 const canonicalPath = pathname === '' ? '/' : `${pathname}/`;
-const canonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in/');
+const defaultCanonicalURL = new URL(canonicalPath, Astro.site || 'https://vpinfra.co.in/');
+const canonicalURL = canonical || defaultCanonicalURL;
 ---
 
 <!doctype html>
