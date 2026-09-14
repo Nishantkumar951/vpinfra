@@ -10,7 +10,12 @@ export async function GET() {
     'https://vpinfra.co.in/blog/building-construction-trends-lucknow/',
     'https://vpinfra.co.in/blog/solar-energy-business-up-investment/',
     'https://vpinfra.co.in/blog/best-house-builders-in-lucknow/',
-    'https://vpinfra.co.in/blog/building-contractors-in-lucknow/'
+    'https://vpinfra.co.in/blog/building-contractors-in-lucknow/',
+    'https://vpinfra.co.in/blog/home-construction-company-in-lucknow/',
+    'https://vpinfra.co.in/blog/builders-and-developers-in-lucknow/',
+    'https://vpinfra.co.in/blog/real-estate-builders-in-lucknow/',
+    'https://vpinfra.co.in/blog/best-builders-in-lucknow/',
+    'https://vpinfra.co.in/blog/best-construction-company-in-lucknow/'
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
