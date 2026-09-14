@@ -435,17 +435,18 @@ const { title, seoTitle, description, tag, date, readTime, author, image, imageA
   .article-body :global(strong) { color: var(--secondary); font-weight: 700; }
 
   /* ── Internal link style ──────────────────────────────── */
-  .article-body :global(a:not(.btn)) {
-    color: var(--primary);
+  .article-body :global(a:not(.btn):not(.internal-link-card)) {
+    color: #c05c00;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1.5px solid rgba(255,123,0,0.3);
-    transition: border-color 0.2s, color 0.2s;
-    padding-bottom: 1px;
+    background: rgba(255, 123, 0, 0.10);
+    border-radius: 3px;
+    padding: 1px 4px;
+    transition: background 0.2s, color 0.2s;
   }
-  .article-body :global(a:not(.btn):hover) {
-    color: var(--primary-hover);
-    border-bottom-color: var(--primary);
+  .article-body :global(a:not(.btn):not(.internal-link-card):hover) {
+    background: rgba(255, 123, 0, 0.22);
+    color: #a34800;
   }
 
   /* ── Table ────────────────────────────────────────────── */
