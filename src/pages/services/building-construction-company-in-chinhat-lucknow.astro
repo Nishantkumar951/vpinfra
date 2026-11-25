@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Chinhat, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Chinhat, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-chinhat-lucknow/","areaServed":{"@type":"Place","name":"Chinhat, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Chinhat, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who builds houses in Chinhat, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited builds houses, apartment buildings and small commercial buildings in Chinhat. It is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot, book a site visit and receive a written estimate."}},{"@type":"Question","name":"Can I get a map sanctioned for a plot in Chinhat?","acceptedAnswer":{"@type":"Answer","text":"Only if the plot lies in a layout that the authority has approved. Check the layout plan, ownership papers and road access before you buy. If the plot qualifies, we prepare drawings that follow the permitted coverage and height, so the sanction moves ahead without repeated corrections."}},{"@type":"Question","name":"Do you build apartment buildings in Chinhat?","acceptedAnswer":{"@type":"Answer","text":"Yes, where the plot size, road width and authority norms allow it. We plan stilt parking, staircases and flat layouts together, then prepare drawings for sanction. Larger residential projects must also register with UP RERA, and we help prepare the technical documents it needs."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Chinhat, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-chinhat-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Chinhat, Lucknow | VP Infra"
+  description="Building Construction Company in Chinhat, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/township-villas-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Chinhat, Lucknow</h1><p class="fade-in-up mt-4">Houses, apartment buildings and small commercial buildings in Chinhat, planned for new colonies and growing neighbourhoods.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Home and Building Construction in Chinhat</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Chinhat, Lucknow, that builds houses, apartment buildings and small commercial buildings. We handle design coordination, approvals support, structure and finishing under ISO 9001:2015 procedures, so you work with one team from the first drawing to the day you get the keys.</p>
+  <p class="mb-4">Chinhat sits east of the city along Faizabad Road, and new colonies keep appearing between the older villages. Plots are larger and cheaper than in central Lucknow, which is why many families build here. The catch is paperwork. Before you pay for a plot, check that the layout is approved and the map can be sanctioned. We look at this with you, so you don't build on a problem.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/township-villas-construction-lucknow.webp" alt="Building construction company in Chinhat, Lucknow: residential colony with houses under construction" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Chinhat</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Chinhat, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Independent Houses</h3><p class="card-text">Spacious homes on larger plots, with room for parking, a garden and future floors.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Stilt-plus-floor blocks with independent flats, shared parking and proper staircases.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Shops and Small Offices</h3><p class="card-text">Road-facing commercial buildings with frontage and parking, on approved plots.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Turnkey Delivery</h3><p class="card-text">Structure, electrical, plumbing and finishing under one contract and one schedule.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Checks We Make Before Building in Chinhat</h2>
+  <p class="mb-4 snapshot" data-snap="1">In Chinhat, the biggest risk is the plot, not the building. Some colonies are developed without approved layouts, and a plot in such a layout may not get a sanctioned map. Checking the layout approval, ownership papers and road access first protects your investment before construction begins.</p>
+  <p class="mb-4">We ask for the sale deed, the layout plan and proof that the colony is approved by the Lucknow Development Authority or registered with UP RERA. Then we check road width, drainage and whether water and power are available. Open plots in newer areas may sit lower than the road, so we plan a raised plinth and good drainage. A soil test comes next, because a foundation chosen on guesswork is the most expensive mistake in a house.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Building Construction in Faizabad Road</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Building Construction in Indira Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Building Construction in Gomti Nagar</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Building Construction in Sitapur Road</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Who builds houses in Chinhat, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited builds houses, apartment buildings and small commercial buildings in Chinhat. It is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot, book a site visit and receive a written estimate.</p></div>
+  <div class="faq-item"><h3>Can I get a map sanctioned for a plot in Chinhat?</h3><p>Only if the plot lies in a layout that the authority has approved. Check the layout plan, ownership papers and road access before you buy. If the plot qualifies, we prepare drawings that follow the permitted coverage and height, so the sanction moves ahead without repeated corrections.</p></div>
+  <div class="faq-item"><h3>Do you build apartment buildings in Chinhat?</h3><p>Yes, where the plot size, road width and authority norms allow it. We plan stilt parking, staircases and flat layouts together, then prepare drawings for sanction. Larger residential projects must also register with UP RERA, and we help prepare the technical documents it needs.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Chinhat Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

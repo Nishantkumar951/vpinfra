@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Amausi, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Amausi, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-amausi-lucknow/","areaServed":{"@type":"Place","name":"Amausi, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Amausi, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Book a site visit today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who builds houses and apartments in Amausi, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited builds houses, apartment buildings and commercial buildings in Amausi, with height clearance checked early. The company is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot and requirements and receive a written estimate."}},{"@type":"Question","name":"Do I need airport clearance to build in Amausi?","acceptedAnswer":{"@type":"Answer","text":"Buildings near an airport usually need a height clearance from the Airports Authority of India. It sets the maximum permissible height for your plot. We help you check the requirement early and design within it, so sanction isn't delayed and no floor is lost late."}},{"@type":"Question","name":"Can you build a home that handles aircraft noise in Amausi?","acceptedAnswer":{"@type":"Answer","text":"Yes. We specify acoustic glazing, thicker walls on the flight-path side and good roof insulation to reduce aircraft noise. We coordinate height clearance, sanction and construction, so your home is ready when you plan it to. Comfort starts with the structure, not the furnishing."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Amausi, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-amausi-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Amausi, Lucknow | VP Infra"
+  description="Building Construction Company in Amausi, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Book a site visit today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/commercial-complex-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Amausi, Lucknow</h1><p class="fade-in-up mt-4">Houses, apartment buildings and commercial buildings in Amausi, designed within airport height norms.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Airport Zone Construction Done Properly in Amausi</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Amausi, Lucknow, that builds houses, apartment buildings and commercial buildings near the airport. We handle height limits, structural design and construction under ISO 9001:2015 procedures, so your project meets airport zone requirements.</p>
+  <p class="mb-4">Amausi is home to Chaudhary Charan Singh International Airport, and the metro now reaches it. Homes, apartments and offices are all coming up around the airport, close to Kanpur Road and Shaheed Path. Building near an airport is different from building elsewhere, because height limits and approvals shape what you can do. Learn the rules early and you save yourself months.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/commercial-complex-construction-lucknow.webp" alt="Building construction company in Amausi, Lucknow: commercial building under construction in the airport zone" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Amausi</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Amausi, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Houses and Villas</h3><p class="card-text">Independent homes with sound insulation and glazing suited to a location under flight paths.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Multi-storey blocks designed within the permitted height, with parking and lift cores planned early.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Rental Housing</h3><p class="card-text">Independent floors and flats near the airport and metro, built to let and easy to maintain.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Offices and Retail</h3><p class="card-text">Commercial buildings near the airport, with frontage and parking within permitted heights.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Height Clearance and Approvals Near the Amausi Airport</h2>
+  <p class="mb-4 snapshot" data-snap="1">Buildings near an airport usually need a height clearance, often called an NOC, from the Airports Authority of India. The clearance sets the maximum height of your structure, and it must be in place before sanction, not after construction begins.</p>
+  <p class="mb-4">We help you identify the permitted height for your plot and design within it, so you don't lose a floor at the last stage. Homes near airports need good acoustic insulation, since aircraft noise is a constant, so we specify double glazing and thicker walls on the sides facing the flight path. A little early checking prevents a lot of expensive rework.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Building Construction in Kanpur Road</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Building Construction in Krishna Nagar</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Building Construction in Alambagh</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Building Construction in Shaheed Path</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Who builds houses and apartments in Amausi, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited builds houses, apartment buildings and commercial buildings in Amausi, with height clearance checked early. The company is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot and requirements and receive a written estimate.</p></div>
+  <div class="faq-item"><h3>Do I need airport clearance to build in Amausi?</h3><p>Buildings near an airport usually need a height clearance from the Airports Authority of India. It sets the maximum permissible height for your plot. We help you check the requirement early and design within it, so sanction isn't delayed and no floor is lost late.</p></div>
+  <div class="faq-item"><h3>Can you build a home that handles aircraft noise in Amausi?</h3><p>Yes. We specify acoustic glazing, thicker walls on the flight-path side and good roof insulation to reduce aircraft noise. We coordinate height clearance, sanction and construction, so your home is ready when you plan it to. Comfort starts with the structure, not the furnishing.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Amausi Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

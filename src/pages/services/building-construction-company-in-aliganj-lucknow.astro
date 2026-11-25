@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Aliganj, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Aliganj, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-aliganj-lucknow/","areaServed":{"@type":"Place","name":"Aliganj, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Aliganj, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who can construct a house in Aliganj, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"VP Infra builds new houses, rebuilds and floor additions in Aliganj. The company, V.P. Infra Properties (OPC) Private Limited, is ISO 9001:2015 certified and works from its Ashiyana office in Lucknow. Call 8840069902 to arrange a site inspection and a written estimate."}},{"@type":"Question","name":"Can I add another floor to my old house in Aliganj?","acceptedAnswer":{"@type":"Answer","text":"Often yes, but not always. We check the foundation, column sizes and sanctioned height before promising anything. If the structure can carry the load, we add the floor. If it can't, we suggest strengthening or a rebuild, and explain the reasons in writing."}},{"@type":"Question","name":"Should I rebuild or add floors to my old house in Aliganj?","acceptedAnswer":{"@type":"Answer","text":"It depends on the structure. If columns and slabs are sound, adding a floor is usually cheaper and quicker. If there is deep cracking, corroded steel or weak foundations, rebuilding is safer and often better value. We give you both estimates side by side after inspection."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Aliganj, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-aliganj-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Aliganj, Lucknow | VP Infra"
+  description="Building Construction Company in Aliganj, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/residential-villa-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Aliganj, Lucknow</h1><p class="fade-in-up mt-4">Rebuilds, new houses and extra floors in Aliganj, planned around established plots and close neighbours.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">New Homes and Rebuilds for Established Aliganj Colonies</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Aliganj, Lucknow, that builds new houses, rebuilds old ones and adds floors on existing structures. Work is planned for settled lanes and shared walls, with ISO 9001:2015 quality control and supervision by one team from start to handover.</p>
+  <p class="mb-4">Aliganj is an old, settled neighbourhood of lettered sectors near Kapoorthala, and most of its construction now is replacement. A family buys or inherits a thirty-year-old house, and the old layout no longer fits. Do you demolish it, add a floor, or start fresh? We look at the structure first and give you an honest answer, even when the answer is that rebuilding costs less than patching.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/residential-villa-construction-lucknow.webp" alt="Building construction company in Aliganj, Lucknow: independent house under construction with brick masonry and scaffolding" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Aliganj</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Aliganj, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Demolition and Rebuild</h3><p class="card-text">Safe demolition and a new frame on the same plot, with neighbours' walls protected.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Floor Additions</h3><p class="card-text">Structural checks first, then a lighter extension built on the existing columns.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Duplex Homes</h3><p class="card-text">Open staircases, cross ventilation and parking inside compact plot limits.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Turnkey Interiors</h3><p class="card-text">Flooring, kitchens, bathrooms, woodwork, electrical and plumbing finished along with the structure.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">What We Check Before Building in Aliganj</h2>
+  <p class="mb-4 snapshot" data-snap="1">Building in Aliganj usually means working beside occupied homes. The main risks are shared boundary walls, old foundations that were never designed for extra floors, and narrow lanes that limit what material trucks can reach. We survey all three before quoting.</p>
+  <p class="mb-4">Demolition near neighbours needs a careful sequence. We cut and remove in stages, support party walls and photograph adjoining structures beforehand, so there is a clear record. For floor additions, we trace the load path down to the footing and check whether the original plan allows more weight. Most houses of this age have no soil report, so we commission one. It takes a few days and saves a lot of regret.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-mahanagar-lucknow/">Building Construction in Mahanagar</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Building Construction in Hazratganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Building Construction in Indira Nagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Building Construction in Jankipuram</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Who can construct a house in Aliganj, Lucknow?</h3><p>VP Infra builds new houses, rebuilds and floor additions in Aliganj. The company, V.P. Infra Properties (OPC) Private Limited, is ISO 9001:2015 certified and works from its Ashiyana office in Lucknow. Call 8840069902 to arrange a site inspection and a written estimate.</p></div>
+  <div class="faq-item"><h3>Can I add another floor to my old house in Aliganj?</h3><p>Often yes, but not always. We check the foundation, column sizes and sanctioned height before promising anything. If the structure can carry the load, we add the floor. If it can't, we suggest strengthening or a rebuild, and explain the reasons in writing.</p></div>
+  <div class="faq-item"><h3>Should I rebuild or add floors to my old house in Aliganj?</h3><p>It depends on the structure. If columns and slabs are sound, adding a floor is usually cheaper and quicker. If there is deep cracking, corroded steel or weak foundations, rebuilding is safer and often better value. We give you both estimates side by side after inspection.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Aliganj Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Sitapur Road, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Sitapur Road, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-sitapur-road-lucknow/","areaServed":{"@type":"Place","name":"Sitapur Road, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Sitapur Road, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which building construction company serves Sitapur Road, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited serves Sitapur Road with houses, villas, apartment buildings and commercial buildings. The company is ISO 9001:2015 certified and works from foundation to handover under one schedule. Call 8840069902 to book a site visit, discuss your requirements and receive a written estimate."}},{"@type":"Question","name":"Can you build a villa with a garden on Sitapur Road?","acceptedAnswer":{"@type":"Answer","text":"Yes. Larger outer plots suit villas with gardens, garages and terraces. We plan the layout around your family and the plot, check coverage and height limits for sanction, and keep space for future floors. The structure is designed for the final number of floors from the start."}},{"@type":"Question","name":"Do you arrange water and power for construction on outer plots?","acceptedAnswer":{"@type":"Answer","text":"Yes. We arrange construction water through a borewell or tankers and use a generator until the permanent connection arrives. We also help you apply for the permanent connection early, since utility approvals can take longer than the structure itself and hold up your handover."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Sitapur Road, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-sitapur-road-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Sitapur Road, Lucknow | VP Infra"
+  description="Building Construction Company in Sitapur Road, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/residential-villa-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Sitapur Road, Lucknow</h1><p class="fade-in-up mt-4">Houses, villas, apartment buildings and commercial buildings on Sitapur Road, planned for larger plots and growing colonies.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Home and Building Construction Along Sitapur Road</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company on Sitapur Road, Lucknow, that builds houses, villas, apartment buildings and commercial buildings. We handle design coordination, approvals support, structure and finishing under ISO 9001:2015 procedures, with one team and one schedule from foundation to handover.</p>
+  <p class="mb-4">Sitapur Road links north Lucknow to the ring road and the towns beyond, and colonies have spread along it for years. Plots on the outer stretches are bigger, so owners often want a villa with a garden, parking for three cars and room for a joint family. We plan those homes around your family, then check what the plot and sanction allow.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/residential-villa-construction-lucknow.webp" alt="Building construction company on Sitapur Road, Lucknow: independent villa under construction" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Sitapur Road</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Sitapur Road, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Villas and Independent Houses</h3><p class="card-text">Larger homes on outer plots, with gardens, garages and room to add floors later.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Multi-storey blocks with lift cores, stilt parking and independent flats.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Shops and Offices</h3><p class="card-text">Road-facing commercial buildings with frontage, parking and clear customer access.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Turnkey Delivery</h3><p class="card-text">Structure, electrical, plumbing and finishing under one contract and one point of contact.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Planning for Outer Plots on Sitapur Road</h2>
+  <p class="mb-4 snapshot" data-snap="1">On the outer stretches of Sitapur Road, services often arrive after the houses do. Water supply, drainage, sewer lines and power connections may be missing at the start, so a construction plan must cover temporary arrangements and realistic timelines for the permanent ones.</p>
+  <p class="mb-4">We plan a borewell or tanker supply for construction water, and a septic tank and soak pit where there is no sewer line. Power comes from a temporary connection or a generator until the permanent meter is approved. Plots near the road can sit lower than the carriageway, so we raise the plinth and plan drainage before the monsoon. A boundary wall goes up early. It marks your plot and protects the material stored on it.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-jankipuram-lucknow/">Building Construction in Jankipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Building Construction in Chinhat</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Building Construction in Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Building Construction in Indira Nagar</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which building construction company serves Sitapur Road, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited serves Sitapur Road with houses, villas, apartment buildings and commercial buildings. The company is ISO 9001:2015 certified and works from foundation to handover under one schedule. Call 8840069902 to book a site visit, discuss your requirements and receive a written estimate.</p></div>
+  <div class="faq-item"><h3>Can you build a villa with a garden on Sitapur Road?</h3><p>Yes. Larger outer plots suit villas with gardens, garages and terraces. We plan the layout around your family and the plot, check coverage and height limits for sanction, and keep space for future floors. The structure is designed for the final number of floors from the start.</p></div>
+  <div class="faq-item"><h3>Do you arrange water and power for construction on outer plots?</h3><p>Yes. We arrange construction water through a borewell or tankers and use a generator until the permanent connection arrives. We also help you apply for the permanent connection early, since utility approvals can take longer than the structure itself and hold up your handover.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Sitapur Road Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

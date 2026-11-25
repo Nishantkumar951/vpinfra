@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Rajajipuram, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Rajajipuram, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-rajajipuram-lucknow/","areaServed":{"@type":"Place","name":"Rajajipuram, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Rajajipuram, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which building construction company works in Rajajipuram, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"VP Infra builds compact houses, floor additions and small shops in Rajajipuram. V.P. Infra Properties (OPC) Private Limited is ISO 9001:2015 certified, with offices nearby in Ashiyana. Call 8840069902 to book a site visit and get a written estimate for your plot."}},{"@type":"Question","name":"Can you build on a small plot of 50 to 100 sq m?","acceptedAnswer":{"@type":"Answer","text":"Yes. Small plots need careful planning, not a different method. We design staircases, light wells and room sizes to suit the plot, then check the layout against sanction rules before construction starts. This way you get the most usable area allowed."}},{"@type":"Question","name":"How do you manage material in narrow lanes?","acceptedAnswer":{"@type":"Answer","text":"We order in smaller loads, use compact equipment and schedule deliveries to avoid peak lane traffic. Material is stacked inside the plot where possible, and debris is removed daily. Neighbours get a contact number for any concerns, so problems are fixed the same day."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Rajajipuram, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-rajajipuram-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Rajajipuram, Lucknow | VP Infra"
+  description="Building Construction Company in Rajajipuram, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/plotted-house-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Rajajipuram, Lucknow</h1><p class="fade-in-up mt-4">Compact multi-storey houses, floor additions and small shops in Rajajipuram, built to fit smaller plots and narrow lanes.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Compact Construction for Rajajipuram's Smaller Plots</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Rajajipuram, Lucknow, that builds compact multi-storey houses, adds floors to existing homes and constructs small shops. Our ISO 9001:2015 certified team designs for 50 to 100 sq m plots, using every metre without making rooms feel cramped.</p>
+  <p class="mb-4">On a plot this size, a wasted corridor is a lost bedroom. Rajajipuram is one of the denser parts of west Lucknow, close to Alambagh, and most houses here are narrow, tall and tightly packed. Good design means getting light into the middle of the house, keeping the staircase small but safe and ensuring the plumbing runs where it can be reached later.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/plotted-house-construction-lucknow.webp" alt="Building construction company in Rajajipuram, Lucknow: compact multi-storey house built on a narrow plot" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Rajajipuram</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Rajajipuram, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Narrow Plot Houses</h3><p class="card-text">Three and four floor homes with light wells and efficient staircases.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Floor Additions</h3><p class="card-text">Upper floors for children or tenants, built only after the foundation is checked.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Shop-Fronted Homes</h3><p class="card-text">Small ground floor shops with the family living above, kept within sanction.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Safe Demolition and Rebuild</h3><p class="card-text">Controlled demolition and reconstruction where neighbours share a wall.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Building in Rajajipuram's Narrow Lanes</h2>
+  <p class="mb-4 snapshot" data-snap="1">Narrow lanes shape every decision in Rajajipuram. Big trucks can't enter, so material arrives in small loads, storage is limited and crews work around neighbours. A construction plan that ignores this will run late, no matter how good the drawings are.</p>
+  <p class="mb-4">We order cement, sand and bricks in smaller, more frequent deliveries and use compact mixers where trucks can't reach. Scaffolding goes up neatly, because there is little room to spare. Where plots share walls, we survey neighbouring buildings before starting and protect them during work. Shuttering is reused carefully and debris leaves daily. It sounds fussy, and it keeps a tight lane workable for everyone living there.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-alambagh-lucknow/">Building Construction in Alambagh</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Building Construction in Ashiyana</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Building Construction in Krishna Nagar</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Building Construction in Kanpur Road</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which building construction company works in Rajajipuram, Lucknow?</h3><p>VP Infra builds compact houses, floor additions and small shops in Rajajipuram. V.P. Infra Properties (OPC) Private Limited is ISO 9001:2015 certified, with offices nearby in Ashiyana. Call 8840069902 to book a site visit and get a written estimate for your plot.</p></div>
+  <div class="faq-item"><h3>Can you build on a small plot of 50 to 100 sq m?</h3><p>Yes. Small plots need careful planning, not a different method. We design staircases, light wells and room sizes to suit the plot, then check the layout against sanction rules before construction starts. This way you get the most usable area allowed.</p></div>
+  <div class="faq-item"><h3>How do you manage material in narrow lanes?</h3><p>We order in smaller loads, use compact equipment and schedule deliveries to avoid peak lane traffic. Material is stacked inside the plot where possible, and debris is removed daily. Neighbours get a contact number for any concerns, so problems are fixed the same day.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Rajajipuram Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

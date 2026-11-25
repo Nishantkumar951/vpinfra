@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Vrindavan Yojana, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Vrindavan Yojana, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-vrindavan-yojana-lucknow/","areaServed":{"@type":"Place","name":"Vrindavan Yojana, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Vrindavan Yojana, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which building construction company serves Vrindavan Yojana, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited serves Vrindavan Yojana with house construction, apartment buildings and rental floors. The company is ISO 9001:2015 certified. Call 8840069902 to schedule a plot visit, discuss your plan and receive a written estimate. Plot size and sector rules shape the final estimate."}},{"@type":"Question","name":"Can I build a rental building in Vrindavan Yojana?","acceptedAnswer":{"@type":"Answer","text":"Yes, within your plot's sanctioned height and coverage. We design units with separate entrances and meters, and plan parking as the rules require. A well-planned rental floor is easier to let, cheaper to maintain and simpler to sell when you decide to exit."}},{"@type":"Question","name":"What payment structure do you follow?","acceptedAnswer":{"@type":"Answer","text":"We link payments to completed stages such as foundation, slab casting, masonry and finishing. Each stage has a written scope and an agreed amount, so you know what has been built before the next payment falls due and nothing is paid in advance."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Vrindavan Yojana, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-vrindavan-yojana-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Vrindavan Yojana, Lucknow | VP Infra"
+  description="Building Construction Company in Vrindavan Yojana, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/township-villas-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Vrindavan Yojana, Lucknow</h1><p class="fade-in-up mt-4">Houses, apartments and rental buildings in Vrindavan Yojana, planned around LDA sectors and growing demand.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Planned Construction in Vrindavan Yojana Sectors</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Vrindavan Yojana, Lucknow, that builds houses, apartment buildings and rental floors across its sectors. We follow LDA plot rules, use ISO 9001:2015 quality procedures and keep a fixed schedule from foundation to handover.</p>
+  <p class="mb-4">Vrindavan Yojana is an LDA housing scheme off Raebareli Road, laid out in sectors with standard plot sizes and wide internal roads. Buyers here often want the same thing: a sensible house they can move into without drama. We build to the scheme's rules, keep the design practical and give you a stage-wise payment plan linked to completed work.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/township-villas-construction-lucknow.webp" alt="Building construction company in Vrindavan Yojana, Lucknow: residential houses and apartments under construction" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Vrindavan Yojana</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Vrindavan Yojana, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Family Houses</h3><p class="card-text">Two to four floor homes on LDA plots, designed for light, privacy and easy upkeep.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Stilt-plus-floor buildings with independent flats and shared parking.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Rental Floors</h3><p class="card-text">Compact units with separate access, built to earn rent soon after handover.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Finishing Packages</h3><p class="card-text">Flooring, painting, electrical and plumbing completed to an agreed specification.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Working Within Vrindavan Yojana Plot Rules</h2>
+  <p class="mb-4 snapshot" data-snap="1">Vrindavan Yojana plots come with LDA controls on setbacks, ground coverage and height. Knowing these before design means your building can be sanctioned at its full permitted size, without removing rooms or floors at the last minute. That keeps the sanction smooth and the design honest.</p>
+  <p class="mb-4">Owners often arrive with a layout copied from a house they liked elsewhere. It rarely fits. We start from the sanctioned limits and work inwards, which gives you the most usable area. Some sectors are still developing, so internal roads, drains and utilities may be unfinished. We check this before fixing a schedule. A plot that is lower than its road will also need a raised plinth, and we price that honestly at the start.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Building Construction in Shaheed Path</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Building Construction in Sultanpur Road</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Building Construction in Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Building Construction in Krishna Nagar</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which building construction company serves Vrindavan Yojana, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited serves Vrindavan Yojana with house construction, apartment buildings and rental floors. The company is ISO 9001:2015 certified. Call 8840069902 to schedule a plot visit, discuss your plan and receive a written estimate. Plot size and sector rules shape the final estimate.</p></div>
+  <div class="faq-item"><h3>Can I build a rental building in Vrindavan Yojana?</h3><p>Yes, within your plot's sanctioned height and coverage. We design units with separate entrances and meters, and plan parking as the rules require. A well-planned rental floor is easier to let, cheaper to maintain and simpler to sell when you decide to exit.</p></div>
+  <div class="faq-item"><h3>What payment structure do you follow?</h3><p>We link payments to completed stages such as foundation, slab casting, masonry and finishing. Each stage has a written scope and an agreed amount, so you know what has been built before the next payment falls due and nothing is paid in advance.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Vrindavan Yojana Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

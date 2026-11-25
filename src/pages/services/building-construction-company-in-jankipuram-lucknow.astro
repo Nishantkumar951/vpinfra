@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Jankipuram, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Jankipuram, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-jankipuram-lucknow/","areaServed":{"@type":"Place","name":"Jankipuram, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Jankipuram, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which building construction company serves Jankipuram, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited serves Jankipuram and Jankipuram Extension. It is ISO 9001:2015 certified and registered under MSME Udyam. We build family homes, rental floors and small commercial units. Call 8840069902 for a site visit and a written estimate."}},{"@type":"Question","name":"Can I build my house in phases in Jankipuram?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design the foundation and columns for the final number of floors, then build in stages as your budget allows. This avoids expensive strengthening later. We agree the phase plan and the cost of each phase in writing before work starts."}},{"@type":"Question","name":"What should I prepare before starting construction?","acceptedAnswer":{"@type":"Answer","text":"Keep your sale deed, a sanctioned or sanction-ready map, a boundary survey and a clear budget. We help with the rest, including soil testing, structural drawings and a milestone schedule. Starting with complete documents prevents most of the delays owners face later."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Jankipuram, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-jankipuram-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Jankipuram, Lucknow | VP Infra"
+  description="Building Construction Company in Jankipuram, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/plotted-house-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Jankipuram, Lucknow</h1><p class="fade-in-up mt-4">Affordable, well planned houses and small commercial buildings in Jankipuram and Jankipuram Extension.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Planned Houses for Jankipuram and Jankipuram Extension</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Jankipuram, Lucknow, that builds family homes, rental floors and small commercial buildings. We keep the design practical and the budget transparent, with ISO 9001:2015 quality procedures and a single team handling structure, finishing and supervision.</p>
+  <p class="mb-4">Jankipuram has grown along the Sitapur Road side of the city, and many owners here are building for the first time. If that's you, welcome. Construction feels overwhelming until someone explains the sequence. We walk you through design, sanction, foundation, structure and finishing, with a written budget at each stage, so there are no surprises when the next payment falls due.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/plotted-house-construction-lucknow.webp" alt="Building construction company in Jankipuram, Lucknow: multi-storey family house with RCC frame and brick infill" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Jankipuram</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Jankipuram, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Budget Family Homes</h3><p class="card-text">Compact, efficient plans that use every square foot and stay within a fixed budget.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Rental Units</h3><p class="card-text">Floors with independent access, designed to earn steady rent from day one.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Small Commercial Units</h3><p class="card-text">Shops and offices on road-facing plots, with proper frontage and parking.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Phased Construction</h3><p class="card-text">Build the ground floor now and extend later, with the structure designed for it.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Smart Planning for First Time Builders in Jankipuram</h2>
+  <p class="mb-4 snapshot" data-snap="1">First-time builders in Jankipuram save the most money by finalising the plan before construction begins. Changing a wall after the slab is cast costs several times more than changing it on paper, so design decisions made early decide the final cost.</p>
+  <p class="mb-4">We ask a lot of questions at the start: how many people live in the house, who will visit, what happens in ten years. Then we plan columns, staircase position and plumbing shafts so that a later floor can be added without breaking the ground floor. Plot levels matter here as well, since some areas sit lower than the road and collect water. Raising the plinth is a small cost that avoids a large problem.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Building Construction in Sitapur Road</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Building Construction in Indira Nagar</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Building Construction in Aliganj</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Building Construction in Mahanagar</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which building construction company serves Jankipuram, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited serves Jankipuram and Jankipuram Extension. It is ISO 9001:2015 certified and registered under MSME Udyam. We build family homes, rental floors and small commercial units. Call 8840069902 for a site visit and a written estimate.</p></div>
+  <div class="faq-item"><h3>Can I build my house in phases in Jankipuram?</h3><p>Yes. We design the foundation and columns for the final number of floors, then build in stages as your budget allows. This avoids expensive strengthening later. We agree the phase plan and the cost of each phase in writing before work starts.</p></div>
+  <div class="faq-item"><h3>What should I prepare before starting construction?</h3><p>Keep your sale deed, a sanctioned or sanction-ready map, a boundary survey and a clear budget. We help with the rest, including soil testing, structural drawings and a milestone schedule. Starting with complete documents prevents most of the delays owners face later.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Jankipuram Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

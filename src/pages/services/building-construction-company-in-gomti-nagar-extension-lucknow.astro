@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Gomti Nagar Extension, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Gomti Nagar Extension, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-gomti-nagar-extension-lucknow/","areaServed":{"@type":"Place","name":"Gomti Nagar Extension, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Gomti Nagar Extension, Lucknow by VP Infra. ISO 9001:2015 certified turnkey homes and commercial buildings. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which building construction company is available in Gomti Nagar Extension, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"VP Infra, formally V.P. Infra Properties (OPC) Private Limited, builds residential and commercial projects across Gomti Nagar Extension. The company is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot, book a site visit and get a written estimate."}},{"@type":"Question","name":"Is a soil test necessary before construction in Gomti Nagar Extension?","acceptedAnswer":{"@type":"Answer","text":"Yes. Because ground conditions change from plot to plot, a soil test is the only reliable way to choose the right foundation. It costs very little compared with repairing cracks later. We arrange the test and share the engineer's written recommendation before the drawings are finalised."}},{"@type":"Question","name":"Can you build an apartment block on my plot in Gomti Nagar Extension?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the plot size, road width and LDA norms allow it. We first check permissible height, FAR and parking requirements, then prepare drawings for sanction. Projects above the RERA threshold need registration before sale, and we help you plan the technical documents for it."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Gomti Nagar Extension, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-gomti-nagar-extension-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Gomti Nagar Extension, Lucknow | VP Infra"
+  description="Building Construction Company in Gomti Nagar Extension, Lucknow by VP Infra. ISO 9001:2015 certified turnkey homes and commercial buildings. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/high-rise-apartment-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Gomti Nagar Extension, Lucknow</h1><p class="fade-in-up mt-4">Apartment blocks, plotted houses and commercial buildings in Gomti Nagar Extension, delivered by an ISO 9001:2015 certified team.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Building for Lucknow's Fastest Growing Residential Belt</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Gomti Nagar Extension, Lucknow, that delivers apartments, independent houses and commercial buildings from foundation to finishing. Every project follows ISO 9001:2015 quality procedures, with approvals, structural design and on-site supervision managed by one accountable team.</p>
+  <p class="mb-4">Not long ago much of this belt was open land. Today it has apartment groups, schools and busy markets, and new plots are still being built on. That growth is good news for property value and bad news for site deliveries, because roads fill up and neighbouring sites compete for labour and material. We plan deliveries and crews early so your build doesn't sit waiting.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/high-rise-apartment-construction-lucknow.webp" alt="Building construction company in Gomti Nagar Extension, Lucknow: RCC apartment building with crane at work" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Gomti Nagar Extension</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Gomti Nagar Extension, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Stilt-plus-floor and multi-storey blocks with lift cores and parking designed in from the start.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Independent Houses</h3><p class="card-text">Homes on 100 to 300 sq m plots, planned for the way families actually live.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Retail and Offices</h3><p class="card-text">Ground-floor shops and office floors on main roads, with clear customer access.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Boundary and Site Works</h3><p class="card-text">Compound walls, drainage and internal roads finished before handover.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Ground Realities We Plan For in Gomti Nagar Extension</h2>
+  <p class="mb-4 snapshot" data-snap="1">Gomti Nagar Extension is newly developed land, and some plots sit on filled or low-lying ground near drainage channels. A soil investigation before design tells us the safe bearing capacity and decides whether you need isolated footings, raft foundations or piles.</p>
+  <p class="mb-4">Don't assume your neighbour's foundation will work for you. Two plots on the same lane can behave very differently. We also check approach roads, because a narrow service lane limits what a concrete mixer or crane can reach. For apartment projects above the RERA threshold, registration with UP RERA comes before any sales, and we support the technical documents it needs.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Building Construction in Gomti Nagar</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Building Construction in Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Building Construction in Shaheed Path</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Building Construction in Vrindavan Yojana</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which building construction company is available in Gomti Nagar Extension, Lucknow?</h3><p>VP Infra, formally V.P. Infra Properties (OPC) Private Limited, builds residential and commercial projects across Gomti Nagar Extension. The company is ISO 9001:2015 certified and registered under MSME Udyam. Call 8840069902 to discuss your plot, book a site visit and get a written estimate.</p></div>
+  <div class="faq-item"><h3>Is a soil test necessary before construction in Gomti Nagar Extension?</h3><p>Yes. Because ground conditions change from plot to plot, a soil test is the only reliable way to choose the right foundation. It costs very little compared with repairing cracks later. We arrange the test and share the engineer's written recommendation before the drawings are finalised.</p></div>
+  <div class="faq-item"><h3>Can you build an apartment block on my plot in Gomti Nagar Extension?</h3><p>Yes, if the plot size, road width and LDA norms allow it. We first check permissible height, FAR and parking requirements, then prepare drawings for sanction. Projects above the RERA threshold need registration before sale, and we help you plan the technical documents for it.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Gomti Nagar Extension Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

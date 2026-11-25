@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Ashiyana, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Ashiyana, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-ashiyana-lucknow/","areaServed":{"@type":"Place","name":"Ashiyana, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Ashiyana, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which is the nearest building construction company in Ashiyana, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"VP Infra's registered office is at M-652, Sector M, Ashiyana Colony, Kanpur Road, with a branch at FF-72, Khazana Complex, Ashiyana. We build houses, floors and commercial units across the colony. Call 8840069902 to meet the team and plan your project."}},{"@type":"Question","name":"Do you build on LDA plots in Ashiyana?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design to the colony's setback, coverage and height rules, so the building matches the sanctioned map. That protects you from notices and from problems when you sell the property or take a loan against it. We keep every approval document in one file for you."}},{"@type":"Question","name":"Can you review an existing construction plan for my Ashiyana plot?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bring your drawing to our office and we will check it against sanction rules, structural sense and budget. A short review often catches an expensive problem early, such as a missing setback or an undersized column. It is worth doing before you sign with any builder."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Ashiyana, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-ashiyana-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Ashiyana, Lucknow | VP Infra"
+  description="Building Construction Company in Ashiyana, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/plotted-house-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Ashiyana, Lucknow</h1><p class="fade-in-up mt-4">Houses, rental floors and shops in Ashiyana, built by a team whose own office is in the colony.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Your Neighbourhood Builder in Ashiyana</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company in Ashiyana, Lucknow, with its registered office at Sector M, Ashiyana Colony, Kanpur Road. We build residential, commercial and turnkey projects in Ashiyana, and short site visits mean problems are solved quickly rather than reported later.</p>
+  <p class="mb-4">Most contractors tell you they're local. We simply are. Our registered office is on M-652, Sector M, and our branch is in Khazana Complex, both in Ashiyana Colony. When you want to see progress, we can be at your site within minutes. When something needs a decision on a Sunday morning, we are close enough to take the call and walk over.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/plotted-house-construction-lucknow.webp" alt="Building construction company in Ashiyana, Lucknow: house under construction in a residential colony" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Ashiyana</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Ashiyana, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">House Construction</h3><p class="card-text">New homes on LDA plots, planned around sanction limits and your family's routine.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Floor Additions</h3><p class="card-text">Extra floors for growing families or rental income, checked structurally first.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Shops and Offices</h3><p class="card-text">Commercial units near Kanpur Road and market lanes, with parking and exits planned in.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Turnkey Finishing</h3><p class="card-text">Flooring, painting, woodwork, electrical and plumbing completed to a written specification.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Local Knowledge That Helps Your Ashiyana Project</h2>
+  <p class="mb-4 snapshot" data-snap="1">Ashiyana is an LDA planned colony with lettered sectors, uniform plot sizes and fixed building controls. Knowing these controls in advance helps us design buildings that pass inspection first time, without costly redrawing or negotiation with the authority. We design to these rules from the very first sketch.</p>
+  <p class="mb-4">We have worked within this colony's rules long enough to know where owners get stuck. Setback violations are common. Excess coverage is common. So is an extra floor built without sanction. We steer you away from all three. Because we are close to Kanpur Road, material from the city's main suppliers reaches site quickly, and that keeps schedules honest. If you need a second opinion on someone else's drawing, bring it to our office.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Building Construction in Kanpur Road</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Building Construction in Alambagh</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Building Construction in Krishna Nagar</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Building Construction in Rajajipuram</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which is the nearest building construction company in Ashiyana, Lucknow?</h3><p>VP Infra's registered office is at M-652, Sector M, Ashiyana Colony, Kanpur Road, with a branch at FF-72, Khazana Complex, Ashiyana. We build houses, floors and commercial units across the colony. Call 8840069902 to meet the team and plan your project.</p></div>
+  <div class="faq-item"><h3>Do you build on LDA plots in Ashiyana?</h3><p>Yes. We design to the colony's setback, coverage and height rules, so the building matches the sanctioned map. That protects you from notices and from problems when you sell the property or take a loan against it. We keep every approval document in one file for you.</p></div>
+  <div class="faq-item"><h3>Can you review an existing construction plan for my Ashiyana plot?</h3><p>Yes. Bring your drawing to our office and we will check it against sanction rules, structural sense and budget. A short review often catches an expensive problem early, such as a missing setback or an undersized column. It is worth doing before you sign with any builder.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Ashiyana Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-kanpur-road-lucknow/">Kanpur Road</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>

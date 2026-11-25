@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schemas = [{"@context":"https://schema.org","@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/","logo":"https://vpinfra.co.in/images/logo.jpg","telephone":"+91-8840069902","address":{"@type":"PostalAddress","streetAddress":"M-652, Sector-M, Ashiyana Colony, Kanpur Road","addressLocality":"Lucknow","postalCode":"226012","addressRegion":"UP","addressCountry":"IN"},"areaServed":{"@type":"Place","name":"Kanpur Road, Lucknow"}},{"@context":"https://schema.org","@type":"Service","serviceType":"Building Construction","name":"Building Construction Company in Kanpur Road, Lucknow","url":"https://vpinfra.co.in/services/building-construction-company-in-kanpur-road-lucknow/","areaServed":{"@type":"Place","name":"Kanpur Road, Lucknow, Uttar Pradesh"},"provider":{"@type":"ConstructionBusiness","name":"V.P. Infra Properties (OPC) Private Limited","url":"https://vpinfra.co.in/"},"description":"Building Construction Company in Kanpur Road, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which is a trusted building construction company on Kanpur Road, Lucknow?","acceptedAnswer":{"@type":"Answer","text":"V.P. Infra Properties (OPC) Private Limited has its registered office on Kanpur Road at M-652, Sector M, Ashiyana Colony. It is ISO 9001:2015 certified. We build showrooms, offices and housing. Call 8840069902 to arrange a site visit. Our office is close, so site visits are quick."}},{"@type":"Question","name":"Do you build showrooms on Kanpur Road?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design showrooms with strong frontage, enough customer parking and a display floor that works with natural light. We also coordinate approvals, fire safety and electrical layouts, so your showroom can open on the date you promised your brand or landlord."}},{"@type":"Question","name":"How do you keep construction safe on a busy main road?","acceptedAnswer":{"@type":"Answer","text":"We barricade the site, use trained flag staff for vehicle movement, deliver material outside peak hours and keep debris off the road. Workers wear helmets and reflective vests, and a supervisor checks scaffolding and site access every morning before work begins."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vpinfra.co.in/"},{"@type":"ListItem","position":2,"name":"Building Construction Company in Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-lucknow/"},{"@type":"ListItem","position":3,"name":"Building Construction Company in Kanpur Road, Lucknow","item":"https://vpinfra.co.in/services/building-construction-company-in-kanpur-road-lucknow/"}]}];
+---
+
+<Layout
+  titleOverride="Building Construction Company in Kanpur Road, Lucknow | VP Infra"
+  description="Building Construction Company in Kanpur Road, Lucknow by VP Infra. ISO 9001:2015 certified residential, commercial and turnkey construction. Get a quote today."
+>
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <section class="page-header text-center" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/locations/commercial-complex-construction-lucknow.webp');">
+  <div class="container"><h1 class="fade-in-up">Building Construction Company in Kanpur Road, Lucknow</h1><p class="fade-in-up mt-4">Showrooms, offices, apartments and houses on Kanpur Road, built by a contractor headquartered on the same road.</p></div>
+  </section>
+
+  <section class="service-details" data-words="main">
+  <div class="container"><div class="grid gap-8 service-grid">
+  <div class="service-content fade-in-up">
+  <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">A Kanpur Road Builder With an Office on Kanpur Road</h2>
+  <p class="mb-4 snapshot" data-snap="1">VP Infra is a building construction company on Kanpur Road, Lucknow, with its registered office at Sector M, Ashiyana Colony, on this very road. We construct showrooms, offices, apartments and houses, backed by ISO 9001:2015 quality procedures and structural supervision from foundation to finishing.</p>
+  <p class="mb-4">Kanpur Road carries heavy traffic from Alambagh to the outskirts, and it is lined with showrooms, offices and residential colonies. Being headquartered here means we know the supply points, the traffic patterns and the approval process from daily experience. When your site is a few minutes from our office, problems get solved the same day instead of the next week.</p>
+  <div class="mt-8"><a href="/contact-us" class="btn btn-primary">Start Your Project</a></div>
+  </div>
+  <div class="service-image fade-in-up" style="animation-delay: 0.2s;"><img src="/images/locations/commercial-complex-construction-lucknow.webp" alt="Building construction company on Kanpur Road, Lucknow: commercial building and showroom under construction" width="1024" height="1024" loading="eager"></div>
+  </div></div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">What We Build in Kanpur Road</h2>
+  <div class="loc-intro"><p class="snapshot" style="text-align:left" data-snap="1">Our building construction services in Kanpur Road, Lucknow, cover houses, rental floors, commercial buildings and turnkey projects. Each service below comes with one written scope, one schedule and one team, so you know what is being built, by when and at what cost.</p></div>
+  <div class="grid gap-8 build-grid">
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Showrooms and Retail</h3><p class="card-text">High-visibility frontage, generous parking and display floors planned for road traffic.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Offices and Commercial Buildings</h3><p class="card-text">Open floor plates, lift cores and fire exits planned together with the structure.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Apartment Buildings</h3><p class="card-text">Multi-storey flats with lift cores, stilt parking and clear fire exits.</p></div></div>
+  <div class="card fade-in-up"><div class="card-content"><h3 class="card-title">Housing and Colonies</h3><p class="card-text">Houses, flats and rental blocks inside the many colonies off the main road.</p></div></div>
+  </div>
+  </div>
+  </section>
+
+  <section data-words="main">
+  <div class="container loc-text">
+  <h2 class="section-title">Building on a Busy Arterial Road</h2>
+  <p class="mb-4 snapshot" data-snap="1">Construction on Kanpur Road means working beside fast traffic and heavy vehicles. Safe site entry, barricading and delivery timing matter for the public as much as for your project, and approvals for buildings on main roads usually require stricter setbacks and parking.</p>
+  <p class="mb-4">We barricade sites properly, use trained flag staff for trucks and stagger deliveries to keep the carriageway clear. For design, we measure frontage, service lanes and setbacks carefully, because losing parking at sanction stage costs more than any construction shortcut saves. Many plots here also sit beside neighbouring buildings or colonies, so boundary surveys come first. Our proximity to suppliers in the south of the city cuts the lead time on cement, steel and sand.</p>
+  <div class="nearby"><p>We also build in nearby areas:</p><div class="area-links"><a href="/services/building-construction-company-in-ashiyana-lucknow/">Building Construction in Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Building Construction in Alambagh</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Building Construction in Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Building Construction in Amausi</a><a href="/services/building-construction-company-in-lucknow/">Building Construction Company in Lucknow</a></div></div>
+  </div>
+  </section>
+
+  <section class="alt-section" data-words="main">
+  <div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-list">
+  <div class="faq-item"><h3>Which is a trusted building construction company on Kanpur Road, Lucknow?</h3><p>V.P. Infra Properties (OPC) Private Limited has its registered office on Kanpur Road at M-652, Sector M, Ashiyana Colony. It is ISO 9001:2015 certified. We build showrooms, offices and housing. Call 8840069902 to arrange a site visit. Our office is close, so site visits are quick.</p></div>
+  <div class="faq-item"><h3>Do you build showrooms on Kanpur Road?</h3><p>Yes. We design showrooms with strong frontage, enough customer parking and a display floor that works with natural light. We also coordinate approvals, fire safety and electrical layouts, so your showroom can open on the date you promised your brand or landlord.</p></div>
+  <div class="faq-item"><h3>How do you keep construction safe on a busy main road?</h3><p>We barricade the site, use trained flag staff for vehicle movement, deliver material outside peak hours and keep debris off the road. Workers wear helmets and reflective vests, and a supervisor checks scaffolding and site access every morning before work begins.</p></div>
+  </div>
+  </div>
+  </section>
+
+  <section class="cta-banner" data-words="main">
+  <div class="container">
+  <h2>Plan Your Kanpur Road Building With VP Infra</h2>
+  <p>Tell us your plot size and what you want to build. We will visit, assess the site and send a written estimate.</p>
+  <a href="/contact-us" class="btn btn-primary">Get a Quote</a>
+  <p class="phone">Call or WhatsApp 8840069902</p>
+  </div>
+  </section>
+
+  <section>
+  <div class="container text-center">
+  <h2 class="section-title" style="font-size:1.8rem">Other Areas We Serve in Lucknow</h2>
+  <div class="area-links"><a href="/services/building-construction-company-in-gomti-nagar-lucknow/">Gomti Nagar</a><a href="/services/building-construction-company-in-gomti-nagar-extension-lucknow/">Gomti Nagar Extension</a><a href="/services/building-construction-company-in-hazratganj-lucknow/">Hazratganj</a><a href="/services/building-construction-company-in-aliganj-lucknow/">Aliganj</a><a href="/services/building-construction-company-in-indira-nagar-lucknow/">Indira Nagar</a><a href="/services/building-construction-company-in-mahanagar-lucknow/">Mahanagar</a><a href="/services/building-construction-company-in-jankipuram-lucknow/">Jankipuram</a><a href="/services/building-construction-company-in-ashiyana-lucknow/">Ashiyana</a><a href="/services/building-construction-company-in-alambagh-lucknow/">Alambagh</a><a href="/services/building-construction-company-in-rajajipuram-lucknow/">Rajajipuram</a><a href="/services/building-construction-company-in-chinhat-lucknow/">Chinhat</a><a href="/services/building-construction-company-in-faizabad-road-lucknow/">Faizabad Road</a><a href="/services/building-construction-company-in-sultanpur-road-lucknow/">Sultanpur Road</a><a href="/services/building-construction-company-in-shaheed-path-lucknow/">Shaheed Path</a><a href="/services/building-construction-company-in-vrindavan-yojana-lucknow/">Vrindavan Yojana</a><a href="/services/building-construction-company-in-sushant-golf-city-lucknow/">Sushant Golf City</a><a href="/services/building-construction-company-in-krishna-nagar-lucknow/">Krishna Nagar</a><a href="/services/building-construction-company-in-amausi-lucknow/">Amausi</a><a href="/services/building-construction-company-in-sitapur-road-lucknow/">Sitapur Road</a></div>
+  </div>
+  </section>
+</Layout>
+
+<style>
+.page-header{background-size:cover;background-position:center;color:var(--text-light);padding:8rem 0 6rem}
+.page-header h1{color:var(--text-light);font-size:3.5rem}
+.service-grid{grid-template-columns:3fr 2fr;align-items:center}
+@media(max-width:992px){.service-grid{grid-template-columns:1fr}.page-header h1{font-size:2.4rem}}
+.service-image img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-lg)}
+.service-content p,.loc-text p{text-align:justify}
+.snapshot{border-left:4px solid var(--primary);padding-left:1rem;color:var(--secondary);font-weight:500}
+.alt-section{background:var(--bg-gray)}
+.loc-intro{max-width:850px;margin:0 auto 2.5rem;text-align:center}
+.build-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.build-grid .card-content{padding:1.75rem}
+.build-grid .card-title{border-top:3px solid var(--primary);padding-top:1rem}
+.build-grid .card-text{margin-bottom:0}
+.loc-text{max-width:900px;margin:0 auto}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:1.25rem}
+.faq-item{background:var(--bg-main);border-radius:8px;box-shadow:var(--shadow-sm);padding:1.5rem 1.75rem;border-left:4px solid var(--primary)}
+.faq-item h3{font-size:1.15rem;margin-bottom:.6rem}
+.faq-item p{color:var(--text-gray);text-align:justify}
+.cta-banner{background:var(--secondary);color:var(--text-light);text-align:center;padding:4rem 0}
+.cta-banner h2{color:var(--text-light);font-size:2.2rem;margin-bottom:1rem}
+.cta-banner p{color:#cbd5e1;max-width:700px;margin:0 auto 1.75rem}
+.cta-banner .phone{margin-top:1.25rem;color:var(--accent);font-weight:600}
+.area-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem}
+.area-links a{padding:.5rem 1rem;border:1px solid var(--bg-gray);background:var(--bg-main);border-radius:999px;font-size:.9rem;font-weight:500;color:var(--secondary);box-shadow:var(--shadow-sm)}
+.area-links a:hover{border-color:var(--primary);color:var(--primary)}
+.nearby{margin-top:2rem;text-align:center;color:var(--text-gray)}
+.nearby .area-links{margin-top:.75rem}
+</style>
